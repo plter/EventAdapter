@@ -1,0 +1,30 @@
+{
+  "name": "eventadapter",
+  "version": "1.0.0",
+  "description": "Event adapter",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "serve": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plter/EventAdapter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plter/EventAdapter/issues"
+  },
+  "homepage": "https://github.com/plter/EventAdapter#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
