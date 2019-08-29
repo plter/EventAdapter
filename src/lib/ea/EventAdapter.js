@@ -1,6 +1,7 @@
 export default class EventAdapter {
     constructor() {
         this._listeners = new Map();
+        this._data = new Map();
     }
 
     on(type, handler) {
@@ -34,6 +35,30 @@ export default class EventAdapter {
                     return true;
                 }
             }
+        }
+    }
+
+    has(type) {
+        return this._listeners.has(type);
+    }
+
+    get listeners() {
+        return this._listeners;
+    }
+
+    dataKeys() {
+        return this._data.keys();
+    }
+
+    data(...args) {
+        switch (args.length) {
+            case 1:
+                return this._data.get(args[0]);
+            case 2:
+                this._data.set(args[0], args[1]);
+                return this;
+            default:
+                return this._data;
         }
     }
 }
