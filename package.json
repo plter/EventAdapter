@@ -22,7 +22,7 @@
   "homepage": "https://github.com/plter/EventAdapter#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "http-server": "^0.11.1"
